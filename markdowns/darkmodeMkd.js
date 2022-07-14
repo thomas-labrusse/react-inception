@@ -1,4 +1,4 @@
-export const mkdContextComponent = `import React, { useState } from 'react'
+export const mkdContext = `import React, { useState } from 'react'
 
 // Creating a context object
 export const ThemeContext = React.createContext({
@@ -24,7 +24,7 @@ const ThemeContextProvider = ({ children }) => {
 
 export default ThemeContextProvider`
 
-export const mkdAppComponent = `import React from 'react'
+export const mkdApp = `import React from 'react'
 
 import styles from './App.module.css'
 import Nav from './Nav'
@@ -49,7 +49,7 @@ const App = () => {
 
 export default App`
 
-export const mkdNavComponent = `import React, { useContext } from 'react'
+export const mkdNav = `import React, { useContext } from 'react'
 import styles from './Nav.module.css'
 import { ThemeContext } from './Context'
 
@@ -76,7 +76,7 @@ export default Nav
 
 `
 
-export const mkdParentComponent = `import React from 'react'
+export const mkdParent = `import React from 'react'
 
 import styles from './Parent.module.css'
 import FirstChild from './FirstChild'
@@ -93,7 +93,7 @@ const Parent = () => {
 
 export default Parent`
 
-export const mkdFirstChildComponent = `import React, { useContext } from 'react'
+export const mkdFirstChild = `import React, { useContext } from 'react'
 import { ThemeContext } from './Context'
 import styles from './Child.module.css'
 
@@ -116,7 +116,7 @@ const FirstChild = () => {
 
 export default FirstChild`
 
-export const mkdSecondChildComponent = `import React from 'react'
+export const mkdSecondChild = `import React from 'react'
 
 import styles from './Child.module.css'
 import NestedChild1 from './NestedChild1'
@@ -136,7 +136,7 @@ const SecondChild = () => {
 export default SecondChild
 `
 
-export const mkdNested1Component = `import React from 'react'
+export const mkdNested1 = `import React from 'react'
 import styles from './NestedChild.module.css'
 
 const NestedChild1 = () => {
@@ -150,7 +150,7 @@ const NestedChild1 = () => {
 
 export default NestedChild1`
 
-export const mkdNested2Component = `import React, { useContext } from 'react'
+export const mkdNested2 = `import React, { useContext } from 'react'
 import { ThemeContext } from './Context'
 import styles from './NestedChild.module.css'
 
