@@ -1,0 +1,19 @@
+.timer {
+	border: 1px black dashed;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.time {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	min-width: 180px;
+	font-size: 60px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.on {
+	background-color: greenyellow;
+}
