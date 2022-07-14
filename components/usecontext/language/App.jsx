@@ -17,8 +17,8 @@ const App = () => {
 					<Renders />
 				</p>
 				<div className={styles['components-container']}>
-					<Nav></Nav>
-					<Parent></Parent>
+					<Nav />
+					<Parent />
 				</div>
 			</div>
 		</LanguageContextProvider>
