@@ -4,21 +4,14 @@ import styles from '../App.module.css'
 import ThemeContextProvider from './Context'
 import Nav from './Nav'
 import Parent from './Parent'
-import ContextData from './ContextData.jsx'
 
-import ComponentTag from '../../ComponentTag'
-
-import { Renders } from '../../Renders'
+import FullTag from '../../FullTag'
 
 const App = () => {
 	return (
 		<ThemeContextProvider>
 			<div className={styles.app}>
-				<p>
-					<ComponentTag name={'App'} />
-					<Renders />
-				</p>
-				<ContextData />
+				<FullTag name={'App'} />
 
 				<div className={styles['components-container']}>
 					<Nav />

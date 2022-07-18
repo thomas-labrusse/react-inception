@@ -3,8 +3,9 @@ import { ThemeContext } from './Context'
 
 import styles from './NestedChild.module.css'
 
-import { Renders } from '../../Renders'
-import ComponentTag from '../../ComponentTag'
+import DeeplyNested from './DeeplyNested'
+
+import FullTag from '../../FullTag'
 
 const NestedChild2 = () => {
 	const themeContext = useContext(ThemeContext)
@@ -17,8 +18,8 @@ const NestedChild2 = () => {
 	return (
 		<div className={darkTheme ? styles.dark : styles.light}>
 			<div className={styles['nested-child']}>
-				<ComponentTag name='NestedChild2' />
-				<Renders />
+				<FullTag name={'NestedChild2'} />
+				<DeeplyNested />
 			</div>
 		</div>
 	)

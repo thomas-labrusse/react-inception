@@ -4,16 +4,12 @@ import styles from '../Child.module.css'
 import NestedChild1 from './NestedChild1'
 import NestedChild2 from './NestedChild2'
 
-import { Renders } from '../../Renders'
-import ComponentTag from '../../ComponentTag'
+import FullTag from '../../FullTag'
 
 const SecondChild = () => {
 	return (
 		<div className={styles['second-child']}>
-			<p>
-				<ComponentTag name='SecondChild' />
-				<Renders />
-			</p>
+			<FullTag name={'SecondChild'} />
 			<div className={styles['nested-children-container']}>
 				<NestedChild1 />
 				<NestedChild2 />

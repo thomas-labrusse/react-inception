@@ -6,10 +6,11 @@ export const Renders = () => {
 	renderCounter.current = renderCounter.current + 1
 
 	return (
-		<span className={styles.renders}>
-			{'{'}
+		// Adding a key to make the component unmount and remonte on each new render (for the animation to work)
+		<span key={renderCounter.current} className={styles.renders}>
+			{'['}
 			{renderCounter.current}
-			{'}'}
+			{']'}
 		</span>
 	)
 }

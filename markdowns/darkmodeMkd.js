@@ -54,27 +54,22 @@ import styles from './Nav.module.css'
 import { ThemeContext } from './Context'
 
 const Nav = () => {
-  const themeContext = useContext(ThemeContext)
-  const { darkTheme, toggleTheme } = themeContext
+	const themeContext = useContext(ThemeContext)
+	const { darkTheme, toggleTheme } = themeContext
 
-  const handleToggle = () => {
-    toggleTheme()
-  }
-
-  return (
-    <div className={styles.nav}>
-      <div>
-        <button onClick={handleToggle} className={styles['theme-button']}>
-          Change theme to : {darkTheme ? 'Light' : 'Dark'}
-        </button>
-      </div>
-    </div>
-  )
+	return (
+		<div className={styles.nav}>
+			<FullTag name={'Nav'} />
+			<div>
+				<button onClick={toggleTheme} className={styles['theme-button']}>
+					Change theme to : {darkTheme ? 'Light' : 'Dark'}
+				</button>
+			</div>
+		</div>
+	)
 }
 
-export default Nav
-
-`
+export default Nav`
 
 export const mkdParent = `import React from 'react'
 
@@ -168,118 +163,57 @@ const NestedChild2 = () => {
 
 export default NestedChild2`
 
-export const mkdAppCss = `
-.app {
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-  border: 3px dashed black;
+export const mkdContextObject = `export const ThemeContext = React.createContext({
+	darkTheme: false,
+	toggleTheme: () => {},
+})`
+
+export const mkdContextProvider = `const ThemeContextProvider = ({ children }) => {
+	const [isDark, setIsDark] = useState(false)
+	const handleToggle = () => {
+		setIsDark((prev) => !prev)
+	}
+	return (
+		<ThemeContext.Provider
+			value={{ darkTheme: isDark, toggleTheme: handleToggle }}
+		>
+			{children}
+		</ThemeContext.Provider>
+	)
 }
 
-.components-container {
-  padding: 20px 10px 10px 10px;
-}
-`
+export default ThemeContextProvider`
 
-export const mkdNavCss = `
-.nav {
-  background-color: burlywood;
-  border-left: solid 1px black;
-  border-top: solid 1px black;
-  border-right: solid 1px black;
-  border-radius: 5px 5px 0px 0px;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
-}
+export const mkdUseContextNav = `import { ThemeContext } from './Context'
 
-.theme-button {
-  border: none;
-  padding: 5px;
-  border-radius: 100px;
-}
-`
-export const mkdChildCss = `
-.child {
-  width: 180px;
-  height: 180px;
-  border-radius: 5px;
-  padding: 5px;
-}
+const Nav = () => {
+	const themeContext = useContext(ThemeContext)
+	const { darkTheme, toggleTheme } = themeContext
 
-.second-child {
-  background-color: white;
-  width: 360px;
-  height: 180px;
-  border: 1px black dashed;
-  border-radius: 5px;
-  padding: 5px;
-}
+	return (
+		<div className={styles.nav}>
+			<FullTag name={'Nav'} />
+			<div>
+				<button onClick={toggleTheme} className={styles['theme-button']}>
+					Change theme to : {darkTheme ? 'Light' : 'Dark'}
+				</button>
+			</div>
+		</div>
+	)
+}`
 
-.nested-children-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 20px;
-  margin-top: 10px;
-}
+export const mkdUseContextChild = `import React, { useContext } from 'react'
+import { ThemeContext } from './Context'
 
-.light {
-  color: #222222;
-  background-color: #fff;
-  border: 1px black dashed;
-  border-radius: 5px;
-  transition: all 0.2s;
-}
+const FirstChild = () => {
+  const themeContext = useContext(ThemeContext)
+  const { darkTheme } = themeContext
 
-.dark {
-  color: #f1f1f1;
-  background-color: #222222;
-  border: 1px #f1f1f1 dashed;
-  border-radius: 5px;
-  transition: all 0.2s;
-}
-`
-
-export const mkdParentCss = `
-.parent {
-  background-color: lightgray;
-  border: solid 1px black;
-  border-radius: 0px 0px 5px 5px;
-  padding: 5px;
-  height: 250px;
-}
-
-.children-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-`
-
-export const mkdNestedChildCss = `
-.nested-child {
-  width: 140px;
-  height: 140px;
-  border-radius: 5px;
-}
-
-.light {
-  color: #222222;
-  background-color: #fff;
-  border: 1px black dashed;
-  border-radius: 5px;
-  transition: all 0.2s;
-}
-
-.dark {
-  color: #f1f1f1;
-  background-color: #222222;
-  border: 1px #f1f1f1 dashed;
-  border-radius: 5px;
-  transition: all 0.2s;
-}
-`
+  return (
+    <div className={darkTheme ? styles.dark : styles.light}>
+      <div className={styles['first-child']}>
+        <p>{'<FirstChild />'}</p>
+      </div>
+    </div>
+  )
+}`

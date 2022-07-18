@@ -3,8 +3,7 @@ import React, { useState, useEffect, useCallback, useReducer } from 'react'
 import styles from './App.module.css'
 
 import Timer from './Timer'
-import ComponentTag from '../ComponentTag'
-import { Renders } from '../Renders'
+import FullTag from '../FullTag'
 
 const App = () => {
 	const reducer = (state, action) => {
@@ -113,10 +112,7 @@ const App = () => {
 
 	return (
 		<div className={styles.app}>
-			<p>
-				<ComponentTag name='App' />
-				<Renders />
-			</p>
+			<FullTag name={'App'} />
 			<div className={styles['timers-container']}>
 				<Timer
 					id={1}

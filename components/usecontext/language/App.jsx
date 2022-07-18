@@ -3,8 +3,7 @@ import styles from '../App.module.css'
 
 import Parent from './Parent'
 import Nav from './Nav'
-import ComponentTag from '../../ComponentTag'
-import { Renders } from '../../Renders'
+import FullTag from '../../FullTag'
 
 import LanguageContextProvider from './Context'
 
@@ -12,10 +11,7 @@ const App = () => {
 	return (
 		<LanguageContextProvider>
 			<div className={styles.app}>
-				<p>
-					<ComponentTag name='App' />
-					<Renders />
-				</p>
+				<FullTag name={'App'} />
 				<div className={styles['components-container']}>
 					<Nav />
 					<Parent />

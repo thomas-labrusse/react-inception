@@ -5,12 +5,12 @@ import SecondChild from './SecondChild'
 
 import { Renders } from '../../Renders'
 import ComponentTag from '../../ComponentTag'
+import FullTag from '../../FullTag'
 
 const Parent = () => {
 	return (
 		<div className={styles.parent}>
-			<ComponentTag name='Parent' />
-			<Renders />
+			<FullTag name={'Parent'} />
 			<div className={styles['children-container']}>
 				<FirstChild />
 				<SecondChild />

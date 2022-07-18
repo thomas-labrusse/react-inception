@@ -11,24 +11,55 @@ a {
 	text-decoration: none;
 }
 
-* {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
 
 h1 {
+	color: #3b3b3b;
 	margin-bottom: 14px;
 }
 h2 {
+	color: #3b3b3b;
 	margin-bottom: 12px;
 }
 h3 {
+	color: #3b3b3b;
 	margin-bottom: 10px;
 }
 p {
-	margin-bottom: 6px;
-	line-height: normal;
+	color: #3b3b3b;
+	margin-bottom: 18px;
+	line-height: 1.5;
+}
+span {
+	color: #3b3b3b;
+}
+
+ul {
+	color: #3b3b3b;
+}
+
+li {
+	color: #3b3b3b;
+}
+
+select {
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	padding: 0 1em 0 0;
+	margin: 0;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	line-height: inherit;
+	outline: none;
 }
 
 /* Sandpack code editor */
@@ -42,7 +73,7 @@ div.sp-wrapper {
 }
 
 div.sp-stack {
-	height: 450px;
+	max-height: 450px;
 }
 
 div.sp-tabs {
@@ -51,6 +82,24 @@ div.sp-tabs {
 
 div.sp-code-editor {
 	border-radius: 0 0 6px 6px;
+}
+
+/* Margins */
+div.smb {
+	margin-bottom: 20px;
+}
+
+/* Styles */
+
+span.code {
+	background-color: #ebebeb;
+	color: black;
+	padding: 3px;
+	border-radius: 4px;
+	/* TODO: import font family */
+	/* 
+	font-family: fira-mono;
+	 */
 }
 
 /* 0px 0.8px 2pxrgba(0,0,0,.032),0px 2.7px 6.7px rgba(0,0,0,.048),0px 12px 30px rgba(0,0,0,.08); */

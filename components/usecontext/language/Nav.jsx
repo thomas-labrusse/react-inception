@@ -3,8 +3,7 @@ import React, { useContext } from 'react'
 import styles from '../Nav.module.css'
 
 import { LanguageContext } from './Context'
-import ComponentTag from '../../ComponentTag'
-import { Renders } from '../../Renders'
+import FullTag from '../../FullTag'
 
 const Nav = () => {
 	const languageContext = useContext(LanguageContext)
@@ -16,11 +15,8 @@ const Nav = () => {
 
 	return (
 		<div className={styles.nav}>
-			<p>
-				<ComponentTag name='Nav' />
-				<Renders />
-			</p>
-			<div>
+			<FullTag name={'Nav'} />
+			<div className={styles.select}>
 				<select
 					name='lang'
 					id='lang'
@@ -28,9 +24,9 @@ const Nav = () => {
 					onChange={handleSelect}
 					defaultValue='en'
 				>
-					<option value='en'>english</option>
-					<option value='fr'>français</option>
-					<option value='es'>español</option>
+					<option value='en'>English</option>
+					<option value='fr'>Français</option>
+					<option value='es'>Español</option>
 					<option value='ja'>日本語</option>
 				</select>
 			</div>

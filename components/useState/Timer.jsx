@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 import styles from './Timer.module.css'
 
-import { Renders } from '../Renders'
+import FullTag from '../FullTag'
 import { formatTimer } from '../../utils/utils'
-import ComponentTag from '../ComponentTag'
 
 const Timer = (props) => {
 	const {
@@ -30,10 +29,7 @@ const Timer = (props) => {
 
 	return (
 		<div className={styles.timer}>
-			<p>
-				<ComponentTag name='Timer' />
-				<Renders />
-			</p>
+			<FullTag name={'Timer'} />
 			<h2>{name}</h2>
 			<div className={activePlayer === id ? styles.on : null}>
 				<div className={styles.time} onClick={() => handleTimerClick(id)}>

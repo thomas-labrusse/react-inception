@@ -3,6 +3,7 @@
 	flex-direction: column;
 	width: 600px;
 	border: 3px dashed black;
+	margin: 40px 0;
 }
 
 .timers-container {

@@ -2,28 +2,24 @@ import React, { useContext } from 'react'
 import styles from '../Child.module.css'
 
 import { LanguageContext } from './Context'
-import ComponentTag from '../../ComponentTag'
-import { Renders } from '../../Renders'
+import FullTag from '../../FullTag'
 
 const Child = () => {
 	const languageContext = useContext(LanguageContext)
 	const { language } = languageContext
 
 	const content = {
-		en: 'How are you ?',
-		fr: 'Comment ça va ?',
-		es: 'Como estas ?',
-		ja: 'げんきですか。',
+		en: 'React hooks are really great.',
+		fr: 'Les hooks de React sont vraiment géniaux.',
+		es: 'Los React hooks son realmente fantásticos.',
+		ja: 'Reactのフックは本当にすごいです。',
 	}
 
 	return (
 		<div className={styles.light}>
 			<div className={styles.child}>
-				<p>
-					<ComponentTag name='SecondChild' />
-					<Renders />
-				</p>
-				<p>{content[language]}</p>
+				<FullTag name={'SecondChild'} />
+				<p className={styles.content}>{content[language]}</p>
 			</div>
 		</div>
 	)
