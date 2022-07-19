@@ -42,10 +42,13 @@ span {
 
 ul {
 	color: #3b3b3b;
+	line-height: 1.5;
+	margin-bottom: 40px;
 }
 
 li {
 	color: #3b3b3b;
+	margin-bottom: 10px;
 }
 
 select {
@@ -69,7 +72,7 @@ div.sp-wrapper {
 	border-radius: 5px;
 	margin: 2rem 0;
 	/* box-shadow: 1px 2px 9px #7f7f7f; */
-	box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.08);
+	box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 div.sp-stack {
@@ -94,12 +97,18 @@ div.smb {
 span.code {
 	background-color: #ebebeb;
 	color: black;
-	padding: 3px;
+	padding: 1px;
 	border-radius: 4px;
 	/* TODO: import font family */
 	/* 
 	font-family: fira-mono;
 	 */
+}
+
+P.note {
+	background-color: rgba(173, 216, 230, 0.183);
+	padding: 5px;
+	border-radius: 5px;
 }
 
 /* 0px 0.8px 2pxrgba(0,0,0,.032),0px 2.7px 6.7px rgba(0,0,0,.048),0px 12px 30px rgba(0,0,0,.08); */
