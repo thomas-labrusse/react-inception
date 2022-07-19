@@ -3,7 +3,7 @@ import React, { useState, useEffect, useCallback, useReducer } from 'react'
 import styles from './App.module.css'
 
 import Timer from './Timer'
-import FullTag from '../FullTag'
+import FullTag from '../../FullTag'
 
 const App = () => {
 	const reducer = (state, action) => {

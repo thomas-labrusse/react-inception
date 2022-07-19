@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../Child.module.css'
+import styles from './Child.module.css'
 
 import NestedChild1 from './NestedChild1'
 import NestedChild2 from './NestedChild2'

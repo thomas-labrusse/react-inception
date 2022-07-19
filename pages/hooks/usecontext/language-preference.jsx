@@ -4,7 +4,7 @@ import {
 	SandpackCodeEditor,
 } from '@codesandbox/sandpack-react'
 
-import App from '../../../components/usecontext/language/App'
+import App from '../../../components/demos/language/App'
 
 import {
 	mkdContext,

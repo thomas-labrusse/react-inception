@@ -1,7 +1,5 @@
 import React from 'react'
-
-import styles from '../Parent.module.css'
-
+import styles from './Parent.module.css'
 import FirstChild from './FirstChild'
 import SecondChild from './SecondChild'
 

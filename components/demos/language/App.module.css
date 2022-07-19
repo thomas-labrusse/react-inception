@@ -1,0 +1,11 @@
+.app {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	margin: 40px 0px 10px 0px;
+	border: 3px dashed black;
+}
+
+.components-container {
+	padding: 15px;
+}

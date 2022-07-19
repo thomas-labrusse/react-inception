@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import styles from '../Child.module.css'
+import styles from './Child.module.css'
 import { ThemeContext } from './Context'
 
 import FullTag from '../../FullTag'

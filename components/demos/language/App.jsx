@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../App.module.css'
+import styles from './App.module.css'
 
 import Parent from './Parent'
 import Nav from './Nav'

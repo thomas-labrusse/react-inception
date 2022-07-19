@@ -1,9 +1,8 @@
-import App from '../../../components/usecontext/darkmode/App'
+import App from '../../../components/demos/darkmode/App'
 
 import {
 	SandpackProvider,
 	SandpackCodeEditor,
-	SandpackCodeViewer,
 } from '@codesandbox/sandpack-react'
 
 import Caption from '../../../components/layout/page/Caption'

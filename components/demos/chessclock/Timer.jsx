@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 
 import styles from './Timer.module.css'
 
-import FullTag from '../FullTag'
-import { formatTimer } from '../../utils/utils'
+import FullTag from '../../FullTag'
+import { formatTimer } from '../../../utils/utils'
 
 const Timer = (props) => {
 	const {
