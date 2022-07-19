@@ -7,6 +7,7 @@ import {
 } from '@codesandbox/sandpack-react'
 
 import Caption from '../../../components/layout/page/Caption'
+import SandpackView from '../../../components/layout/page/SandpackView'
 
 import {
 	mkdApp,
@@ -106,66 +107,15 @@ const DarkMode = () => {
 				<span className='code'>darkTheme</span> value (boolean) value that will
 				be toggle by a toggleTheme method.
 			</p>
-			<SandpackProvider
-				template='react'
-				files={{
-					'/App.js': mkdContextObject,
-				}}
-				theme='auto'
-			>
-				<SandpackCodeViewer
-					showTabs={false}
-					readOnly={true}
-					showReadOnly={false}
-					wrapContent={true}
-				/>
-			</SandpackProvider>
+			<SandpackView mkd={mkdContextObject} />
 			<h3>Creating a context provider with context.provider</h3>
-			<SandpackProvider
-				template='react'
-				files={{
-					'/App.js': mkdContextProvider,
-				}}
-				theme='auto'
-			>
-				<SandpackCodeViewer
-					showTabs={false}
-					readOnly={true}
-					showReadOnly={false}
-					wrapContent={true}
-				/>
-			</SandpackProvider>
+
+			<SandpackView mkd={mkdContextProvider} />
 			<h3>Using the context value in a component, with useContext</h3>
 			<p>In the Nav component to access the theme toggle method only.</p>
-			<SandpackProvider
-				template='react'
-				files={{
-					'/App.js': mkdUseContextNav,
-				}}
-				theme='auto'
-			>
-				<SandpackCodeViewer
-					showTabs={false}
-					readOnly={true}
-					showReadOnly={false}
-					wrapContent={true}
-				/>
-			</SandpackProvider>
+			<SandpackView mkd={mkdUseContextNav} />
 			<p>In a child component, to have access to the current value.</p>
-			<SandpackProvider
-				template='react'
-				files={{
-					'/App.js': mkdUseContextChild,
-				}}
-				theme='auto'
-			>
-				<SandpackCodeViewer
-					showTabs={false}
-					readOnly={true}
-					showReadOnly={false}
-					wrapContent={true}
-				/>
-			</SandpackProvider>
+			<SandpackView mkd={mkdUseContextChild} />
 		</div>
 	)
 }
