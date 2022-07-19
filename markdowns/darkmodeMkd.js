@@ -174,9 +174,7 @@ export const mkdContextProvider = `const ThemeContextProvider = ({ children }) =
 		setIsDark((prev) => !prev)
 	}
 	return (
-		<ThemeContext.Provider
-			value={{ darkTheme: isDark, toggleTheme: handleToggle }}
-		>
+		<ThemeContext.Provider value={{ darkTheme: isDark, toggleTheme: handleToggle }}>
 			{children}
 		</ThemeContext.Provider>
 	)
@@ -217,3 +215,16 @@ const FirstChild = () => {
     </div>
   )
 }`
+
+export const mkdAppContextProvider = `import ThemeContextProvider from './Context'
+
+const App = () => {
+  return (
+    <ThemeContextProvider>
+          <Nav />
+          <Parent />
+    </ThemeContextProvider>
+  )
+}
+
+export default App`
