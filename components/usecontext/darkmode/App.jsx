@@ -12,7 +12,6 @@ const App = () => {
 		<ThemeContextProvider>
 			<div className={styles.app}>
 				<FullTag name={'App'} />
-
 				<div className={styles['components-container']}>
 					<Nav />
 					<Parent />
