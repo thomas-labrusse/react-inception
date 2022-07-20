@@ -182,7 +182,9 @@ export const mkdContextProvider = `const ThemeContextProvider = ({ children }) =
 
 export default ThemeContextProvider`
 
-export const mkdUseContextNav = `import { ThemeContext } from './Context'
+export const mkdUseContextNav = `import React, { useContext } from 'react'
+
+import { ThemeContext } from './Context'
 
 const Nav = () => {
 	const themeContext = useContext(ThemeContext)
@@ -225,6 +227,4 @@ const App = () => {
           <Parent />
     </ThemeContextProvider>
   )
-}
-
-export default App`
+}`

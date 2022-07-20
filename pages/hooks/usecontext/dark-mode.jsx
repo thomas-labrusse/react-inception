@@ -48,7 +48,7 @@ const DarkMode = () => {
 				text={
 					'Each component has a render counter next to its name, that flashes and increments whenever it re-renders. Play around with it to see how our implementation impacts each component.'
 				}
-			></Caption>
+			/>
 			<SandpackProvider
 				template='react'
 				files={{
@@ -94,16 +94,16 @@ const DarkMode = () => {
 				<ul>
 					<li>
 						{'1) Create a context object with'}{' '}
-						<span className='code'>useContext</span>
+						<span className='code'>React.createContext</span>
 					</li>
 					<li>
 						{'2) Create a context provider with'}{' '}
-						<span className='code'>SomeContext.Provider</span>
+						<span className='code'>{'<SomeContext.Provider>'}</span>
 						{' including state and methods.'}
 					</li>
 					<li>
 						{
-							'3) Wrap the consumer components that need access to our context value and methods.'
+							'3) Wrap the consumer components that need access to our context values and methods.'
 						}
 					</li>
 					<li>
@@ -123,6 +123,13 @@ const DarkMode = () => {
 				}
 			</p>
 			<SandpackView mkd={mkdContextObject} />
+			<p className='note'>
+				{
+					'Note : we immediatly export this context object, because we will have to pass it into the '
+				}{' '}
+				<span className='code'>useContext</span>
+				{' hook in our consumer components. '}
+			</p>
 			<h3>Step 2 : Creating a context provider with context.provider</h3>
 			<p>
 				{
@@ -203,7 +210,7 @@ const DarkMode = () => {
 			<h2>Optimizations</h2>
 			<p>
 				When the context values change, all consumer components{' '}
-				<strong>reading</strong> thoses values with
+				<strong>reading</strong> thoses values with{' '}
 				<span className='code'>useState</span>
 				{' will re-render.'}
 			</p>
