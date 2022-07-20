@@ -5,7 +5,7 @@ import ThemeContextProvider from './Context'
 import Nav from './Nav'
 import Parent from './Parent'
 
-import FullTag from '../../FullTag'
+import FullTag from '../../layout/demos/FullTag'
 
 const App = () => {
 	return (

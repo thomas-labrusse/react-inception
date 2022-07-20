@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import styles from './Nav.module.css'
 
 import { LanguageContext } from './Context'
-import FullTag from '../../FullTag'
+import FullTag from '../../layout/demos/FullTag'
 
 const Nav = () => {
 	const languageContext = useContext(LanguageContext)

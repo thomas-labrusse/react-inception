@@ -4,7 +4,7 @@ import styles from './Nav.module.css'
 
 import { ThemeContext } from './Context'
 
-import FullTag from '../../FullTag'
+import FullTag from '../../layout/demos/FullTag'
 
 const Nav = () => {
 	const themeContext = useContext(ThemeContext)

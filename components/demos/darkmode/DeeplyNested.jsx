@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Child.module.css'
 
-import FullTag from '../../FullTag'
+import FullTag from '../../layout/demos/FullTag'
 
 const DeeplyNested = () => {
 	return (

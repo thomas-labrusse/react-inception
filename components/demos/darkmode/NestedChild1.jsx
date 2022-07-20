@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './NestedChild.module.css'
 
-import FullTag from '../../FullTag'
+import FullTag from '../../layout/demos/FullTag'
 
 const NestedChild1 = () => {
 	return (

@@ -5,7 +5,7 @@ import styles from './NestedChild.module.css'
 
 import DeeplyNested from './DeeplyNested'
 
-import FullTag from '../../FullTag'
+import FullTag from '../../layout/demos/FullTag'
 
 const NestedChild2 = () => {
 	const themeContext = useContext(ThemeContext)

@@ -5,7 +5,7 @@ import styles from './Parent.module.css'
 import FirstChild from './FirstChild'
 import SecondChild from './SecondChild'
 
-import FullTag from '../../FullTag'
+import FullTag from '../../layout/demos/FullTag'
 
 const Parent = () => {
 	return (

@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import styles from './Child.module.css'
 import { ThemeContext } from './Context'
 
-import FullTag from '../../FullTag'
+import FullTag from '../../layout/demos/FullTag'
 
 const FirstChild = () => {
 	const themeContext = useContext(ThemeContext)

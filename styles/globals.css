@@ -11,6 +11,16 @@ a {
 	text-decoration: none;
 }
 
+a.link {
+	transition: all 150ms ease-in;
+	color: rgb(132, 37, 255);
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+a.link:hover {
+	border-color: rgb(132, 37, 255);
+}
+
 *,
 *::before,
 *::after {
@@ -21,20 +31,20 @@ a {
 
 h1 {
 	color: #3b3b3b;
-	margin-bottom: 14px;
+	margin-bottom: 20px;
 }
 h2 {
 	color: #3b3b3b;
-	margin-bottom: 12px;
+	margin-bottom: 16px;
 }
 h3 {
 	color: #3b3b3b;
-	margin-bottom: 10px;
+	margin-bottom: 14px;
 }
 p {
 	color: #3b3b3b;
-	margin-bottom: 18px;
-	line-height: 1.5;
+	margin-bottom: 24px;
+	line-height: 1.7;
 }
 span {
 	color: #3b3b3b;
@@ -42,7 +52,7 @@ span {
 
 ul {
 	color: #3b3b3b;
-	line-height: 1.5;
+	line-height: 1.7;
 	margin-bottom: 40px;
 }
 

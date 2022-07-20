@@ -3,7 +3,7 @@ import styles from './App.module.css'
 
 import Parent from './Parent'
 import Nav from './Nav'
-import FullTag from '../../FullTag'
+import FullTag from '../../layout/demos/FullTag'
 
 import LanguageContextProvider from './Context'
 

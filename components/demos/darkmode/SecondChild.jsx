@@ -4,7 +4,7 @@ import styles from './Child.module.css'
 import NestedChild1 from './NestedChild1'
 import NestedChild2 from './NestedChild2'
 
-import FullTag from '../../FullTag'
+import FullTag from '../../layout/demos/FullTag'
 
 const SecondChild = () => {
 	return (
