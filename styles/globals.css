@@ -13,12 +13,12 @@ a {
 
 a.link {
 	transition: all 150ms ease-in;
-	color: rgb(132, 37, 255);
+	color: #7c5ae3;
 	border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 a.link:hover {
-	border-color: rgb(132, 37, 255);
+	border-color: #7c5ae3;
 }
 
 *,
@@ -115,10 +115,25 @@ span.code {
 	 */
 }
 
-P.note {
+p.note {
 	background-color: rgba(173, 216, 230, 0.183);
 	padding: 5px;
 	border-radius: 5px;
+}
+
+button.btn {
+	border: solid 2px #7c5ae3;
+	color: #7c5ae3;
+	background-color: white;
+	padding: 5px 10px;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.1s;
+}
+
+button.btn:hover {
+	background-color: #7c5ae3;
+	color: white;
 }
 
 /* 0px 0.8px 2pxrgba(0,0,0,.032),0px 2.7px 6.7px rgba(0,0,0,.048),0px 12px 30px rgba(0,0,0,.08); */

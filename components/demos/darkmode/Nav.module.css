@@ -1,5 +1,5 @@
 .nav {
-	background-color: burlywood;
+	/* background-color: burlywood; */
 	border-left: solid 1px black;
 	border-top: solid 1px black;
 	border-right: solid 1px black;
@@ -8,12 +8,6 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 5px;
-}
-
-.theme-button {
-	border: none;
-	padding: 5px;
-	border-radius: 100px;
 }
 
 .select {
