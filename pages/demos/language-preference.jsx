@@ -5,9 +5,9 @@ import {
 	SandpackCodeEditor,
 } from '@codesandbox/sandpack-react'
 
-import App from '../../../components/demos/language/App'
-import Caption from '../../../components/layout/page/Caption'
-import SandpackView from '../../../components/layout/page/SandpackView'
+import App from '../../components/demos/language/App'
+import Caption from '../../components/layout/page/Caption'
+import SandpackView from '../../components/layout/page/SandpackView'
 
 import {
 	mkdContext,
@@ -21,7 +21,7 @@ import {
 	mkdAppContextProvider,
 	mkdUseContextNav,
 	mkdUseContextChild,
-} from '../../../markdowns/languagePreferenceMkd'
+} from '../../markdowns/languagePreferenceMkd'
 
 const LanguagePreference = () => {
 	return (
@@ -31,7 +31,7 @@ const LanguagePreference = () => {
 				This is the second example of implementation of useContext. If you need
 				more explanation on how to use Context with hooks in React, have a look
 				at this page :{' '}
-				<Link href={'/hooks/usecontext/dark-mode'}>
+				<Link href={'/demos/dark-mode'}>
 					<a className='link'>dark mode with useContext</a>
 				</Link>
 				.

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import App from '../../../components/demos/chessclock/App'
+import App from '../../components/demos/chessclock/App'
 
 const ChessClock = () => {
 	return (

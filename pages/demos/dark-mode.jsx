@@ -1,12 +1,12 @@
-import App from '../../../components/demos/darkmode/App'
+import App from '../../components/demos/darkmode/App'
 
 import {
 	SandpackProvider,
 	SandpackCodeEditor,
 } from '@codesandbox/sandpack-react'
 
-import Caption from '../../../components/layout/page/Caption'
-import SandpackView from '../../../components/layout/page/SandpackView'
+import Caption from '../../components/layout/page/Caption'
+import SandpackView from '../../components/layout/page/SandpackView'
 
 import {
 	mkdApp,
@@ -22,7 +22,7 @@ import {
 	mkdUseContextNav,
 	mkdUseContextChild,
 	mkdAppContextProvider,
-} from '../../../markdowns/darkModeMkd'
+} from '../../markdowns/darkModeMkd'
 
 const DarkMode = () => {
 	return (
