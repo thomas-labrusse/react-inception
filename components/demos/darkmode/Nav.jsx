@@ -14,7 +14,7 @@ const Nav = () => {
 		<div className={styles.nav}>
 			<FullTag name={'Nav'} />
 			<div>
-				<button onClick={toggleTheme} className={styles['theme-button']}>
+				<button onClick={toggleTheme} className='btn'>
 					Change theme to : {darkTheme ? 'Light' : 'Dark'}
 				</button>
 			</div>
