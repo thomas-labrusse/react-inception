@@ -1,0 +1,35 @@
+.app {
+	width: 600px;
+	min-height: 380px;
+	border: 3px dashed black;
+	margin: 20px 0;
+}
+
+.container {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 5px;
+	margin-bottom: 10px;
+	width: 90%;
+	height: 90px;
+}
+
+.button-container {
+	display: flex;
+	column-gap: 10px;
+}
+
+.pre-container {
+	border: 1px solid #3b3b3b;
+	max-height: 240px;
+	overflow: scroll;
+	width: 90%;
+}

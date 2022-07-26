@@ -4,9 +4,9 @@ import {
 	SandpackProvider,
 	SandpackCodeEditor,
 } from '@codesandbox/sandpack-react'
+import SandpackView from '../../components/layout/page/SandpackView'
 
 import Caption from '../../components/layout/page/Caption'
-import SandpackView from '../../components/layout/page/SandpackView'
 
 import {
 	mkdApp,
