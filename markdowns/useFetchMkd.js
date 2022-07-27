@@ -72,3 +72,30 @@ export const useFetch = (options) => {
 
 	return { data, loading, error, resetError, fetchData }
 }`
+
+export const mkdUseFetch1 = `export const useFetch = (options) => {
+	const [data, setData] = useState(null)
+	const [loading, setLoading] = useState(false)
+	const [error, setError] = useState(null)`
+
+export const mkdUseFetch2 = `const fetchData = useCallback(() => {
+		setLoading(true)
+		fetch(options.url)
+			.then((res) => res.json())
+			.then((parsedData) => setData(parsedData))
+			.catch((err) => setError(err))
+			.finally(() => setLoading(false))
+	}, [options.url])`
+
+export const mkdUseFetch3 = `useEffect(() => {
+		fetchData()
+	}, [fetchData])`
+
+export const mkdUseFetch4 = `const resetError = () => setError(null)`
+export const mkdUseFetch5 = `return { data, loading, error, resetError, fetchData }`
+export const mkdApp1 = `const { loading, data, error, fetchData, resetError } = useFetch({
+		url: Urls[index],
+	})`
+export const mkdApp2 = `<button onClick={() => fetchData()} className='btn'>
+	refetch
+</button>`
