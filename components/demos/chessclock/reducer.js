@@ -56,6 +56,6 @@ export const initialState = {
 	activeTimer: null,
 	gameOver: false,
 	paused: false,
-	timer1: 10,
-	timer2: 10,
+	timer1: 300,
+	timer2: 300,
 }
