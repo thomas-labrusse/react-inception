@@ -239,3 +239,13 @@ export const mkdReducer7 = `case 'timer_clicked': {
 				return { ...state, activePlayer: 1, activeTimer: 1 }
 			}
 		}`
+
+export const mkdReducer8 = `<Timer
+	id={1}
+	name={'Player 1'}
+	activeTimer={state.activeTimer}
+	activePlayer={state.activePlayer}
+	handleTimerClick={handleTimerClicked}
+	timer={state.timer1}
+	decreaseTimer={handleDecreaseTimer}
+/>`

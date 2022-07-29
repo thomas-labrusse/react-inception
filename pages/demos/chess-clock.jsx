@@ -21,6 +21,7 @@ import {
 	mkdReducer5,
 	mkdReducer6,
 	mkdReducer7,
+	mkdReducer8,
 } from '../../markdowns/chessClockMkd'
 
 const ChessClock = () => {
@@ -131,36 +132,106 @@ const ChessClock = () => {
 			</div>
 			<h3>Step 1 : Calling useReducer with a reducer and initial state.</h3>
 			<p>
-				{
-					'The context object will hold the value we want to share between components. To create one, we use '
-				}{' '}
-				<span className='code'>React.createContext</span>{' '}
-				{
-					'passing a default value to it. In our case, we pass an object with a darkTheme value (boolean) that will be controlled by a toggleTheme method.'
-				}
+				<span className='code'>useReducer</span>{' '}
+				{' returns an array with two values, a '}
+				<span className='code'>state</span>
+				{', which is read only, just like the state in '}{' '}
+				<span className='code'>useState</span> {' and a function'}{' '}
+				<span className='code'>dispatch</span>{' '}
+				{'that allows to update the state. We pass to arguments to '}{' '}
+				<span className='code'>useReducer</span> {': a'}{' '}
+				<span className='code'>reducer</span>{' '}
+				{' function where our state updating logic will be, and an '}{' '}
+				<span className='code'>initialState</span> {' value.'}
 			</p>
 			<SandpackView mkd={mkdReducer1} />
-			<p>SOME PARAGRAPH</p>
+			<p>
+				{
+					'Because we want to give the players the ability to start a new game, we isolate our '
+				}{' '}
+				<span className='code'>initialState</span>{' '}
+				{' in a constant, making the state reset simpler.'}
+			</p>
 			<SandpackView mkd={mkdReducer2} />
 			<h3>
 				Step 2 : Use dispatch functions in event handlers when state update are
 				required.
 			</h3>
-
-			<p>SOME PARAGRAPH</p>
+			<p>
+				{'Next we create our event handlers by simply passing the '}{' '}
+				<span className='code'>dispatch</span>
+				{
+					' function to them. The function take a single object as an argument and we identify the action with a '
+				}{' '}
+				<span className='code'>type</span>{' '}
+				{'. To pause the game, we simply name the type '}
+				<span className='code'>{'pause'}</span>
+				{'.'}
+			</p>
 			<SandpackView mkd={mkdReducer3} />
-			<p>SOME PARAGRAPH</p>
+			<p>
+				{
+					'Other propreties can be passed to the action object. For instance when a timer is clicked, we need to know which, to properly update the state. Therefore in addition to a '
+				}{' '}
+				<span className='code'>type</span> {' we add an '}{' '}
+				<span className='code'>id</span>
+				{' proprety pointing to an'} <span className='code'>id</span>
+				{' value passed into the event handler.'}
+			</p>
 			<SandpackView mkd={mkdReducer4} />
 			<h3>
 				{"Step 3 : Write the state update 'actions' in a reducer function"}
 			</h3>
-
-			<p>SOME PARAGRAPH</p>
+			<p>
+				{'Finally we write our '} <span className='code'>reducer</span>
+				{
+					' function to handle the different action types defined in our handlers. In that function we pass two arguments : the '
+				}{' '}
+				<span>state</span> {'that we want to change, and the '}{' '}
+				<span className='code'>action</span>
+				{' object. The '} <span className='code'>reducer</span>{' '}
+				{' works with conditionnal statements, by convention '}{' '}
+				<span className='code'>switch/case</span>
+				{' statements, but '} <span className='code'>if...else</span>{' '}
+				{' statements work just as well.'}
+			</p>
 			<SandpackView mkd={mkdReducer5} />
-			<p>SOME PARAGRAPH</p>
+			<p>
+				{'In each '} <span className='code'>case</span>{' '}
+				{
+					' block we define how we want the state to be manipulated. For instance in case of an '
+				}{' '}
+				<span className='code'>action.type</span> {' equal to'}{' '}
+				<span className='code'>{"'reset'"}</span>
+				{
+					' we simply want the state to be reset to its initial state. So we use our '
+				}{' '}
+				<span className='code'>initialState</span>
+				{' constant to reinitialize both timers.'}
+			</p>
 			<SandpackView mkd={mkdReducer6} />
-			<p>SOME PARAGRAPH</p>
+			<p>
+				{
+					'In case of more complex state updates, we can read the current data in state, or the values passed in our action object. Earlier we passed an '
+				}{' '}
+				<span className='code'>id</span> {' of '}{' '}
+				<span className='code'>id</span> {' into or action object of type'}{' '}
+				<span>{"'timer_clicked'"}</span>{' '}
+				{
+					' via our event handler. We can now use that information to properly update our '
+				}{' '}
+				<span className='code'>state</span> {' and define what are the '}{' '}
+				<span className='code'>activePlayer</span> {' and '}{' '}
+				<span className='code'>activeTimer</span>.
+			</p>
 			<SandpackView mkd={mkdReducer7} />
+			<p>
+				{'And this is it, now we can use our '}
+				<span className='code'>state</span> {' to pass values to our '}{' '}
+				<span className='code'>Timer</span>{' '}
+				{'components, and pass event handlers as we would normally do.'}
+			</p>
+			<SandpackView mkd={mkdReducer8} />
 		</>
 	)
 }
