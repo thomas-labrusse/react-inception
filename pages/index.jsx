@@ -34,6 +34,14 @@ const articles = [
 	},
 	{
 		id: 5,
+		title: 'Renders counter component (useRef)',
+		link: '/demos/renders-counter',
+		description:
+			'A tiny component to track a parent component number of renders.',
+		tags: ['useRef', 'key'],
+	},
+	{
+		id: 6,
 		title: 'useReducer example with state initialization',
 		link: '/demos/chess-clock',
 		description:
@@ -41,14 +49,14 @@ const articles = [
 		tags: ['useReducer'],
 	},
 	{
-		id: 6,
+		id: 7,
 		title: 'useReducer examples',
 		link: '/demos/chess-clock',
 		description: 'find useReducer examples',
 		tags: ['useReducer'],
 	},
 	{
-		id: 7,
+		id: 8,
 		title: 'Custom hooks examples',
 		link: '/demos/chess-clock',
 		description: '1/ useContext custom hook to avoid extra imports',
