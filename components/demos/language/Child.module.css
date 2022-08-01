@@ -50,3 +50,15 @@
 .content {
 	margin: 20px 5px;
 }
+
+@media (max-width: 680px) {
+	.child {
+		width: 150px;
+	}
+}
+
+@media (max-width: 500px) {
+	.child {
+		width: 110px;
+	}
+}

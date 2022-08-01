@@ -1,9 +1,15 @@
 .app {
 	display: flex;
 	flex-direction: column;
-	width: 600px;
+	max-width: 600px;
 	margin: 40px 0px 10px 0px;
 	border: 3px dashed black;
+}
+
+@media (max-width: 680px) {
+	.app {
+		width: 400px;
+	}
 }
 
 .components-container {

@@ -19,3 +19,8 @@
 	border-radius: 5px;
 	transition: all 0.2s;
 }
+@media (max-width: 680px) {
+	.nested-child {
+		width: 80px;
+	}
+}

@@ -2,13 +2,14 @@
 	border: 1px black dashed;
 	border-radius: 5px;
 	padding: 5px;
+	width: 200px;
 }
 
 .time {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	min-width: 180px;
+	/* min-width: 180px; */
 	font-size: 60px;
 	border-radius: 5px;
 	cursor: pointer;
@@ -16,4 +17,22 @@
 
 .on {
 	background-color: #6ce35a96;
+}
+
+@media (max-width: 680px) {
+	.timer {
+		width: 150px;
+	}
+	.time {
+		font-size: 48px;
+	}
+}
+
+@media (max-width: 500px) {
+	.timer {
+		width: 120px;
+	}
+	.time {
+		font-size: 36px;
+	}
 }

@@ -50,3 +50,17 @@
 .content {
 	margin: 20px 5px;
 }
+
+@media (max-width: 680px) {
+	.child {
+		width: 100px;
+	}
+
+	.second-child {
+		width: 200px;
+	}
+
+	.deeply-nested-child {
+		width: 50px;
+	}
+}

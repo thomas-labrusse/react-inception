@@ -7,3 +7,21 @@
 .main-container main {
 	width: 800px;
 }
+
+@media (max-width: 900px) {
+	.main-container main {
+		width: 650px;
+	}
+}
+
+@media (max-width: 720px) {
+	.main-container main {
+		width: 500px;
+	}
+}
+
+@media (max-width: 550px) {
+	.main-container main {
+		width: 350px;
+	}
+}
