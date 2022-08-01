@@ -14,7 +14,9 @@ const Child = () => {
 	return (
 		<div className={styles.child}>
 			<ComponentTag name={'Child'} />
-			<Renders />
+			<span className={styles.renders}>
+				<Renders />
+			</span>
 			<div className={styles['counter-container']}>
 				<button onClick={handleClick} className='btn'>
 					Increment

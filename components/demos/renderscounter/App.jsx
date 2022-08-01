@@ -15,7 +15,10 @@ const App = () => {
 	return (
 		<div className={styles.app}>
 			<ComponentTag name={'App'} />
-			<Renders />
+			<span className={styles.renders}>
+				<Renders />
+			</span>
+
 			<div className={styles['counter-container']}>
 				<button onClick={handleClick} className='btn'>
 					Increment

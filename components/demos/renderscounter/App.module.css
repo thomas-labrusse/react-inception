@@ -5,6 +5,10 @@
 	margin: 40px 0;
 }
 
+.renders span {
+	font-size: 36px;
+}
+
 .counter-container {
 	display: flex;
 	flex-direction: row;
@@ -13,7 +17,7 @@
 }
 
 .number {
-	font-size: 28px;
+	font-size: 18px;
 	margin: 12px;
 	color: #7c5ae3;
 }
