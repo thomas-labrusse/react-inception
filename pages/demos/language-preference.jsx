@@ -41,12 +41,14 @@ const LanguagePreference = () => {
 					"In this example we manage the user language preference via the Context API. In this tiny app, we want some component to have access to the current preferred language. Our Parent component for instance doesn't care about language since it's not displaying any text content. With context, we allow nested component to access that data directly, without having to props drilling through ancestors."
 				}
 			</p>
-			<App />
-			<Caption
-				text={
-					'Each component has a render counter next to its name, that flashes and increments whenever it re-renders. Play around with it to see how our implementation impacts each component.'
-				}
-			/>
+			<div className='app-container'>
+				<App />
+				<Caption
+					text={
+						'Each component has a render counter next to its name, that flashes and increments whenever it re-renders. Play around with it to see how our implementation impacts each component.'
+					}
+				/>
+			</div>
 			<SandpackProvider
 				template='react'
 				files={{

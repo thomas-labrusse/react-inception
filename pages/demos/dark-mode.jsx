@@ -43,12 +43,14 @@ const DarkMode = () => {
 					'hooks allows to cherry pick what component will be accessing a particular state, its a perfect candidate for that kind of job.'
 				}
 			</p>
-			<App />
-			<Caption
-				text={
-					'Each component has a render counter next to its name, that flashes and increments whenever it re-renders. Play around with it to see how our implementation impacts each component.'
-				}
-			/>
+			<div className='app-container'>
+				<App />
+				<Caption
+					text={
+						'Each component has a render counter next to its name, that flashes and increments whenever it re-renders. Play around with it to see how our implementation impacts each component.'
+					}
+				/>
+			</div>
 			<SandpackProvider
 				template='react'
 				files={{

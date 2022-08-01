@@ -43,7 +43,9 @@ const UseFetch = () => {
 				<span className='code'>useFetch</span> {' custom hook via the '}{' '}
 				<span className='code'>useEffect</span> {'hook.'}
 			</p>
-			<App />
+			<div className='app-container'>
+				<App />
+			</div>
 			<SandpackProvider
 				template='react'
 				files={{

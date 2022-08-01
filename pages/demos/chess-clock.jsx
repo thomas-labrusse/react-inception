@@ -67,12 +67,14 @@ const ChessClock = () => {
 					</li>
 				</ul>
 			</div>
-			<App />
-			<Caption
-				text={
-					'Each component has a render counter next to its name, that flashes and increments whenever it re-renders. Play around with it to see how our implementation impacts each component.'
-				}
-			/>
+			<div className='app-container'>
+				<App />
+				<Caption
+					text={
+						'Each component has a render counter next to its name, that flashes and increments whenever it re-renders. Play around with it to see how our implementation impacts each component.'
+					}
+				/>
+			</div>
 			<SandpackProvider
 				template='react'
 				files={{
