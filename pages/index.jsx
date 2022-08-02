@@ -29,7 +29,7 @@ const articles = [
 		title: 'useFetch (custom hook)',
 		link: '/demos/usefetch-custom-hook',
 		description:
-			'A custom hook to fetch any JSON data, directly or via a side effect.',
+			'A custom hook to fetch any JSON data, on first render or via handlers.',
 		tags: ['custom hook', 'useEffect', 'useCallback'],
 	},
 	{
@@ -37,31 +37,24 @@ const articles = [
 		title: 'Renders counter component (useRef)',
 		link: '/demos/renders-counter',
 		description:
-			'A tiny component to track a parent component number of renders.',
+			'A tiny component to track a parent component number of renders (optimization tool).',
 		tags: ['useRef', 'key'],
 	},
 	{
 		id: 6,
 		title: 'useReducer example with state initialization',
-		link: '/demos/chess-clock',
+		link: '/demos/table-creator',
 		description:
 			'a tool to create a table with customizable number of col and row ?',
 		tags: ['useReducer'],
 	},
-	{
-		id: 7,
-		title: 'useReducer examples',
-		link: '/demos/chess-clock',
-		description: 'find useReducer examples',
-		tags: ['useReducer'],
-	},
-	{
-		id: 8,
-		title: 'Custom hooks examples',
-		link: '/demos/chess-clock',
-		description: '1/ useContext custom hook to avoid extra imports',
-		tags: ['useEffect'],
-	},
+	// {
+	// 	id: 7,
+	// 	title: 'Custom hooks examples',
+	// 	link: '/demos/chess-clock',
+	// 	description: '1/ useContext custom hook to avoid extra imports',
+	// 	tags: ['useEffect'],
+	// },
 ]
 
 const Home = () => {

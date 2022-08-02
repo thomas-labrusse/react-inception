@@ -1,0 +1,24 @@
+.cell {
+	border: 1px solid black;
+	width: 75px;
+	height: 25px;
+}
+
+.input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding-left: 4px;
+}
+
+.input:focus {
+	outline: none;
+	background-color: #7c5ae343;
+	border-radius: 0px;
+}
+
+@media (max-width: 500px) {
+	.cell {
+		width: 60px;
+	}
+}
