@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			<Header>
-				<h1>React Inception</h1>
+				<h1 className={styles.title}>React Inception</h1>
 				<Nav />
 			</Header>
 			<div className={styles['main-container']}>
