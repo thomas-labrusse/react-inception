@@ -21,8 +21,8 @@ export const reducer = (state, action) => {
 			return [...newArray]
 		}
 		case 'add_row': {
-			if (state[0].length >= 7) {
-				alert('This table is limited to 7 rows.')
+			if (state[0].length >= 6) {
+				alert('This table is limited to 6 rows.')
 				return [...state]
 			}
 			const newArray = [...state]
