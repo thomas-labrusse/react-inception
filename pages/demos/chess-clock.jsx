@@ -27,7 +27,7 @@ import {
 const ChessClock = () => {
 	return (
 		<>
-			<h1>Chess Clock app</h1>
+			<h1>Chess Clock with useReducer</h1>
 			<p>
 				{'A chess clock is a great demo use case for the '}{' '}
 				<span className='code'>useReducer</span>

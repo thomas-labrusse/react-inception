@@ -22,7 +22,7 @@ import {
 const RendersCounter = () => {
 	return (
 		<div>
-			<h1>Renders counter component</h1>
+			<h1>Renders Counter with useRef</h1>
 			<p>
 				{
 					'When building this website I wanted a way to track and display render counter on every components that are parts of the small demo projects. The aim was to have a visual cue of how components reacted (no pun intended) to user interactions.'
