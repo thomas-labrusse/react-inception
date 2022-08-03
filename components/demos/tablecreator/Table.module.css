@@ -1,0 +1,54 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.panel {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	column-gap: 20px;
+}
+
+.table-container {
+	display: flex;
+	margin: 20px;
+	height: 80%;
+}
+
+.rows {
+	display: flex;
+	flex-direction: row;
+}
+
+.row-buttons {
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.button {
+	border: solid 1px #7c5ae3;
+	color: #7c5ae3;
+	background-color: white;
+	width: 18px;
+	height: 18px;
+	padding: 1px;
+	border-radius: 1px;
+	cursor: pointer;
+	transition: all 0.1s;
+	margin-top: 4px;
+}
+
+.button:hover {
+	background-color: #7c5ae3;
+	color: white;
+}
