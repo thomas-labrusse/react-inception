@@ -61,57 +61,60 @@ const Table = ({ format, deleteTable }) => {
 	}
 
 	return (
-		<div className={styles.container}>
-			<div className={styles.panel}>
-				<button onClick={handleAddColumn} className='btn'>
-					Add column
-				</button>
-				<button onClick={handleAddRow} className='btn'>
-					Add row
-				</button>
-				<button onClick={deleteTable} className='btn'>
-					Create new table
-				</button>
-			</div>
-			<div className={styles['table-container']}>
-				<div className={styles.rows}>
-					{state &&
-						state.map((col, colId) => {
-							return (
-								<div key={colId} className={styles.column}>
-									{col.map((val, rowId) => (
-										<Cell
-											key={rowId}
-											value={val}
-											colId={colId}
-											rowId={rowId}
-											handleEditCell={handleEditCell}
-										/>
-									))}
-									<button
-										onClick={() => handleRemoveColumn(colId)}
-										className={styles.button}
-									>
-										-
-									</button>
-								</div>
-							)
-						})}
-					{state && (
-						<div className={styles['row-buttons']}>
-							{state[0].map((row, rowId) => {
+		<div className={styles.table}>
+			<FullTag name={'Table'} />
+			<div className={styles.container}>
+				<div className={styles.panel}>
+					<button onClick={handleAddColumn} className='btn'>
+						Add column
+					</button>
+					<button onClick={handleAddRow} className='btn'>
+						Add row
+					</button>
+					<button onClick={deleteTable} className='btn'>
+						Create new table
+					</button>
+				</div>
+				<div className={styles['table-container']}>
+					<div className={styles.rows}>
+						{state &&
+							state.map((col, colId) => {
 								return (
-									<button
-										key={rowId}
-										className={styles.button}
-										onClick={() => handleRemoveRow(rowId)}
-									>
-										-
-									</button>
+									<div key={colId} className={styles.column}>
+										{col.map((val, rowId) => (
+											<Cell
+												key={rowId}
+												value={val}
+												colId={colId}
+												rowId={rowId}
+												handleEditCell={handleEditCell}
+											/>
+										))}
+										<button
+											onClick={() => handleRemoveColumn(colId)}
+											className={styles.button}
+										>
+											-
+										</button>
+									</div>
 								)
 							})}
-						</div>
-					)}
+						{state && (
+							<div className={styles['row-buttons']}>
+								{state[0].map((row, rowId) => {
+									return (
+										<button
+											key={rowId}
+											className={styles.button}
+											onClick={() => handleRemoveRow(rowId)}
+										>
+											-
+										</button>
+									)
+								})}
+							</div>
+						)}
+					</div>
 				</div>
 			</div>
 		</div>
