@@ -5,6 +5,7 @@ import {
 	SandpackCodeEditor,
 } from '@codesandbox/sandpack-react'
 import SandpackView from '../../components/layout/page/SandpackView'
+import PageEnd from '../../components/layout/page/PageEnd'
 
 import {
 	mkdApp,
@@ -211,6 +212,7 @@ const UseFetch = () => {
 				{' for instance, that we can attach to event handlers.'}
 			</p>
 			<SandpackView mkd={mkdApp2} />
+			<PageEnd link={'/examples/usefetch-custom-hook'} />
 		</div>
 	)
 }

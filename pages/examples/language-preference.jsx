@@ -8,6 +8,7 @@ import {
 import App from '../../components/demos/language/App'
 import Caption from '../../components/layout/page/Caption'
 import SandpackView from '../../components/layout/page/SandpackView'
+import PageEnd from '../../components/layout/page/PageEnd'
 
 import {
 	mkdContext,
@@ -28,10 +29,12 @@ const LanguagePreference = () => {
 		<div>
 			<h1>Language preference with useContext</h1>
 			<p>
-				This is the second example of implementation of useContext. If you need
-				more explanation on how to use Context with hooks in React, have a look
-				at this page :{' '}
-				<Link href={'/demos/dark-mode'}>
+				{'This is the second example of '}{' '}
+				<span className='code'>useContext</span>{' '}
+				{
+					'implementation. If you need more explanation on how to use Context with hooks in React, have a look at this page : '
+				}
+				<Link href={'/examples/dark-mode'}>
 					<a className='link'>dark mode with useContext</a>
 				</Link>
 				.
@@ -239,6 +242,7 @@ const LanguagePreference = () => {
 					etc.), split each into a specific provider.
 				</li>
 			</ul>
+			<PageEnd link={'/examples/language-preference'} />
 		</div>
 	)
 }

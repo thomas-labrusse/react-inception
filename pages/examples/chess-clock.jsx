@@ -9,6 +9,7 @@ import {
 import SandpackView from '../../components/layout/page/SandpackView'
 
 import Caption from '../../components/layout/page/Caption'
+import PageEnd from '../../components/layout/page/PageEnd'
 
 import {
 	mkdApp,
@@ -234,6 +235,7 @@ const ChessClock = () => {
 				{'components, and pass event handlers as we would normally do.'}
 			</p>
 			<SandpackView mkd={mkdReducer8} />
+			<PageEnd link={'/examples/chess-clock'} />
 		</>
 	)
 }

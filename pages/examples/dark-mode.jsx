@@ -7,6 +7,7 @@ import {
 import SandpackView from '../../components/layout/page/SandpackView'
 
 import Caption from '../../components/layout/page/Caption'
+import PageEnd from '../../components/layout/page/PageEnd'
 
 import {
 	mkdApp,
@@ -174,7 +175,6 @@ const DarkMode = () => {
 					"Note : the common ancestor will not have access to our context, only its descendents will. Wrapping all consumer components in 'App'  will not make the context values available in 'App'."
 				}
 			</p>
-
 			<p className='note'>
 				{
 					'Note : aim to wrap with the provider at the common ancestor level, not the topmost level of your app.'
@@ -261,6 +261,7 @@ const DarkMode = () => {
 					etc.), split each into a specific provider.
 				</li>
 			</ul>
+			<PageEnd link={'/examples/dark-mode'} />
 		</div>
 	)
 }

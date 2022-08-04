@@ -6,61 +6,53 @@ const articles = [
 	{
 		id: 1,
 		title: 'Dark Mode (useContext)',
-		link: '/demos/dark-mode',
+		link: '/examples/dark-mode',
 		description: 'Dark mode with the useContext hook.',
 		tags: ['useContext', 'useState'],
 	},
 	{
 		id: 2,
-		title: 'Language preference (useContext)',
-		link: '/demos/language-preference',
+		title: 'Language Preference (useContext)',
+		link: '/examples/language-preference',
 		description: 'Language preference with the useContext hook.',
 		tags: ['useContext', 'useState'],
 	},
 	{
 		id: 3,
 		title: 'Chess Clock (useReducer)',
-		link: '/demos/chess-clock',
+		link: '/examples/chess-clock',
 		description: 'A simple chess clock with useReducer and useEffect hooks.',
 		tags: ['useEffect', 'useReducer'],
 	},
 	{
 		id: 4,
 		title: 'useFetch (custom hook)',
-		link: '/demos/usefetch-custom-hook',
+		link: '/examples/usefetch-custom-hook',
 		description:
 			'A custom hook to fetch any JSON data, on first render or via handlers.',
 		tags: ['custom hook', 'useEffect', 'useCallback'],
 	},
 	{
 		id: 5,
-		title: 'Renders counter component (useRef)',
-		link: '/demos/renders-counter',
+		title: 'Renders Counter (useRef)',
+		link: '/examples/renders-counter',
 		description:
 			'A tiny component to track a parent component number of renders (optimization tool).',
 		tags: ['useRef', 'key'],
 	},
 	{
 		id: 6,
-		title: 'useReducer example with state initialization',
-		link: '/demos/table-creator',
+		title: 'Table Creator (useReducer)',
+		link: '/examples/table-creator',
 		description:
-			'a tool to create a table with customizable number of col and row ?',
+			'Creating a table with custom number of columns and rows, with useReducer.',
 		tags: ['useReducer'],
 	},
-	// {
-	// 	id: 7,
-	// 	title: 'Custom hooks examples',
-	// 	link: '/demos/chess-clock',
-	// 	description: '1/ useContext custom hook to avoid extra imports',
-	// 	tags: ['useEffect'],
-	// },
 ]
 
 const Home = () => {
 	return (
 		<div className={styles.container}>
-			<h2>Home</h2>
 			<div className={styles['cards-container']}>
 				{articles.map((article) => {
 					return (

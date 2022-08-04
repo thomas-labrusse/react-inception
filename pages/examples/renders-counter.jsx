@@ -9,6 +9,7 @@ import {
 import SandpackView from '../../components/layout/page/SandpackView'
 
 import Caption from '../../components/layout/page/Caption'
+import PageEnd from '../../components/layout/page/PageEnd'
 
 import {
 	mkdUseEffect,
@@ -166,6 +167,7 @@ const RendersCounter = () => {
 					</li>
 				</ul>
 			</div>
+			<PageEnd link={'/examples/renders-counter'} />
 		</div>
 	)
 }
