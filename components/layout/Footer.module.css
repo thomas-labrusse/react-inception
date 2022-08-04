@@ -1,0 +1,12 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	border-top: solid 1px #e3dcf9;
+}
+
+.credits {
+	color: #898989;
+}

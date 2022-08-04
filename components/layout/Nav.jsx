@@ -4,7 +4,9 @@ import styles from './Nav.module.css'
 const Nav = () => {
 	return (
 		<div className={styles.nav}>
-			<Link href={'/'}>Home</Link>
+			<Link href={'/'}>
+				<a className='nav-link'>Home</a>
+			</Link>
 		</div>
 	)
 }

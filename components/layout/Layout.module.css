@@ -1,11 +1,8 @@
-.title {
-	color: #3b3b3b;
-}
-
 .main-container {
 	display: flex;
 	justify-content: center;
-	margin: 40px;
+	background-color: #fafafa;
+	padding: 80px 40px;
 }
 
 .main-container main {
