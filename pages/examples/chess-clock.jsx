@@ -23,7 +23,21 @@ import {
 	mkdReducer6,
 	mkdReducer7,
 	mkdReducer8,
-} from '../../markdowns/chessClockMkd'
+} from '../../public/markdowns/chessClockMkd'
+
+// import {
+// 	mkdApp,
+// 	mkdReducer,
+// 	mkdTimer,
+// 	mkdReducer1,
+// 	mkdReducer2,
+// 	mkdReducer3,
+// 	mkdReducer4,
+// 	mkdReducer5,
+// 	mkdReducer6,
+// 	mkdReducer7,
+// 	mkdReducer8,
+// } from '../../markdowns/chessClockMkd'
 
 const ChessClock = () => {
 	return (

@@ -23,7 +23,7 @@ import {
 	mkdUseContextNav,
 	mkdUseContextChild,
 	mkdAppContextProvider,
-} from '../../markdowns/darkModeMkd'
+} from '../../public/markdowns/darkModeMkd'
 
 const DarkMode = () => {
 	return (

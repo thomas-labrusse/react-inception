@@ -22,7 +22,7 @@ import {
 	mkdAppContextProvider,
 	mkdUseContextNav,
 	mkdUseContextChild,
-} from '../../markdowns/languagePreferenceMkd'
+} from '../../public/markdowns/languagePreferenceMkd'
 
 const LanguagePreference = () => {
 	return (

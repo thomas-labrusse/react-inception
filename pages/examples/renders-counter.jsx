@@ -18,7 +18,7 @@ import {
 	mkdChild,
 	mkdUseRef1,
 	mkdUseRef2,
-} from '../../markdowns/rendersCounterMkd'
+} from '../../public/markdowns/rendersCounterMkd'
 
 const RendersCounter = () => {
 	return (
