@@ -21,7 +21,7 @@ import {
 	mkdUseReducerNoInitializer,
 	mkdHandler,
 	mkdReducer1,
-} from '../../markdowns/tableCreatorMkd'
+} from '../../public/markdowns/tableCreatorMkd'
 
 const TableCreator = () => {
 	return (

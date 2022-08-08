@@ -17,7 +17,7 @@ import {
 	mkdUseFetch5,
 	mkdApp1,
 	mkdApp2,
-} from '../../markdowns/useFetchMkd'
+} from '../../public/markdowns/useFetchMkd'
 
 const UseFetch = () => {
 	return (
