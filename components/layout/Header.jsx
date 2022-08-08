@@ -17,6 +17,11 @@ const Header = () => {
 						'Bite-size, visual examples to sharpen your React hooks understanding.'
 					}
 				</p>
+				{/* <p className={styles.tagline}>
+					{'Bite-size, '} <span className='color'>visual</span>{' '}
+					{'examples to sharpen your '}{' '}
+					<span className='color'>React hooks</span> {' understanding.'}
+				</p> */}
 			</div>
 		</div>
 	)

@@ -126,7 +126,10 @@ span.code {
 }
 
 span.color {
+	background-color: #7c5ae3;
 	color: #7c5ae3;
+	color: #fff;
+	padding: 0px 3px;
 }
 
 div.app-container {

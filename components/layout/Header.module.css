@@ -2,8 +2,9 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	gap: 25px;
 	align-items: center;
-	height: 120px;
+	height: 140px;
 	border-bottom: solid 1px #e3dcf9;
 }
 
@@ -19,12 +20,24 @@
 
 .title {
 	color: #3b3b3b;
-}
-
-.lower {
+	margin: 0;
 }
 
 .tagline {
 	font-size: 20px;
-	color: #656565;
+	font-weight: 500;
+	color: #acacac;
+}
+
+@media (max-width: 720px) {
+	.lower {
+		display: none;
+	}
+}
+
+@media (max-width: 550px) {
+	.upper {
+		flex-direction: column;
+		align-items: center;
+	}
 }
